@@ -1,0 +1,149 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  background-color: rgb(244, 244, 244);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  width: 200mm; 
+  height: 645mm; 
+  margin: 0 auto; 
+  padding: 0mm; 
+  box-sizing: border-box; 
+  border: 3mm solid #764d30; 
+}
+header {
+  text-align: center;
+  
+  padding: 20px; 
+  width: 100%; /* ทำให้ header มีขนาดเท่ากับ border-box ของ .a4-page */
+  box-sizing: border-box; /* ให้ padding นับเข้าไปในขนาดทั้งหมด */
+  
+}
+
+section {
+  margin: 20px 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+h4{
+  font-family: 'Noto Serif Thai', serif;
+  color: #764d30;
+  font-size: 40px;
+
+}
+h3{
+  font-family: 'Playfair Display', serif;
+  color: #654a35;
+  font-size: 37px;
+  margin-top: -30px;
+}
+p{
+  font-family: 'Noto Serif Thai', serif;
+  font-size: 20px;
+  color: #764d30;
+}
+h1{
+  font-family: 'Noto Serif Thai', serif;
+  background-color: #8c694a;
+  color: rgb(255, 252, 252);
+  box-shadow: 0 0 0 2mm #8c694a;
+}
+.performance-container {
+  display: flex;
+}
+
+.performance-item {
+  flex: 1;
+  margin: 0 30px; /* ระยะห่างระหว่างภาพ */
+}
+h6{
+  font-family: 'Noto Serif Thai', serif;
+  font-size: 25px;
+  color: #764d30;
+
+}
+h7{
+  color: #000033;
+  background-color: #d00e0e;
+  text-align: center;
+  
+  margin-bottom: 1rem;
+  font-weight: 50;
+  font-family: 'Sirin Stencil', sans-serif;
+  font-size: 5vmin;
+  line-height: 5vmin;
+}
+.gradient-text {
+  color: transparent;
+  background: conic-gradient(
+    #12111b 12%, 
+    #f0360d 12%, #110e18 33%, 
+    #161d07 33%, rgb(228, 95, 13) 55%, 
+    #aa2929 55%, #250707 70%, 
+    #050f17 70%, #db1e11 87%, 
+    #af4504 87%);
+  background-size: 50%;
+  background-clip: text;  
+  -webkit-background-clip: text;
+
+  animation: expand-rev 5.5s ease forwards;
+
+  cursor: pointer;
+}
+
+.gradient-text:hover {
+  animation: expand 0.5s ease forwards;
+}
+
+@keyframes expand {
+  0% {
+    background-size: 50%;
+    background-position: 0 0;
+  }
+  20% {
+    background-size: 55%;
+    background-position: 0 1em;
+  }
+  100% {
+    background-size: 325%;
+    background-position: -10em -4em;
+  }
+}
+
+@keyframes expand-rev {
+  0% {
+    background-size: 325%;
+    background-position: -10em -4em;
+  }
+  20% {
+    background-size: 55%;
+    background-position: 0 1em;
+  }
+  100% {
+    background-size: 50%;
+    background-position: 0 0;
+  }
+}
+.content-container {
+  background-color: #FFF6E2;
+  box-shadow: 0 0 0 2mm #FFF6E2; /* ความกว้างของขอบ 2mm สีดำ */
+}
+h2{
+  font-family: 'Noto Serif Thai', serif;
+  font-size: 22px;
+  color: #764d30;
+}
